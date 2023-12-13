@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { confirmAlert } from "react-confirm-alert";
 import { useImmer } from "use-immer";
 import { ToastContainer, toast } from "react-toastify";
-
 
 import _ from "lodash";
 
@@ -79,7 +78,7 @@ const App = () => {
         });
 
         setLoading((prevLoading) => !prevLoading);
-        navigate("/contacts");
+        navigate("/");
       }
     } catch (err) {
       console.log(err.message);
@@ -180,11 +179,10 @@ const App = () => {
         <ToastContainer rtl={true} position="top-right" theme="colored" />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate to="/contacts" />} />
-          <Route path="contacts" element={<Contacts />} />
-          <Route path="contacts/add" element={<AddContact />} />
-          <Route path="contacts/:contactId" element={<ViewContact />} />
-          <Route path="contacts/edit/:contactId" element={<EditContact />} />
+          <Route path="/" element={<Contacts />} />
+          <Route path="add" element={<AddContact />} />
+          <Route path=":contactId" element={<ViewContact />} />
+          <Route path="edit/:contactId" element={<EditContact />} />
         </Routes>
       </div>
     </ContactContext.Provider>

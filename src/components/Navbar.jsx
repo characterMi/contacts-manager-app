@@ -21,7 +21,7 @@ const Navbar = () => {
               <span style={{ color: PURPLE }}>مخاطبین</span>
             </div>
           </div>
-          {location.pathname === "/contacts" ? (
+          {location.pathname === "/" ? (
             <div className="col">
               <SearchContact />
             </div>

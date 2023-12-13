@@ -98,7 +98,7 @@ const ViewContact = () => {
                 <div className="row my-2">
                   <div className="d-grid gap-2 col-6 mx-auto">
                     <Link
-                      to="/contacts"
+                      to="/"
                       className="btn"
                       style={{ backgroundColor: PURPLE }}
                     >

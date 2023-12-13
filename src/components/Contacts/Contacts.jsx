@@ -18,7 +18,7 @@ const Contacts = () => {
             <div className="col">
               <p className="h3 float-end">
                 <Link
-                  to={"/contacts/add"}
+                  to={"add"}
                   className="btn m-2"
                   style={{ backgroundColor: PINK }}
                 >

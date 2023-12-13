@@ -14,8 +14,8 @@ const Contact = ({ contact, deleteContact }) => {
                 alt={contact.fullname}
                 style={{ border: `1px solid ${PURPLE}` }}
                 className="img-fluid rounded"
-              /> : 
-              <img src="https://static.vecteezy.com/system/resources/previews/007/033/146/original/profile-icon-login-head-icon-vector.jpg" alt='no-picture' style={{borderRadius: "50%"}} className="img-fluid"/>
+              /> :
+                <img src="https://static.vecteezy.com/system/resources/previews/007/033/146/original/profile-icon-login-head-icon-vector.jpg" alt='no-picture' style={{ borderRadius: "50%" }} className="img-fluid" />
               }
             </div>
             <div className="col-md-7 col-sm-7">
@@ -38,7 +38,7 @@ const Contact = ({ contact, deleteContact }) => {
             </div>
             <div className="col-md-1 col-sm-1 d-flex flex-column align-items-center">
               <Link
-                to={`/contacts/${contact.id}`}
+                to={`/${contact.id}`}
                 className="btn my-1"
                 style={{ backgroundColor: ORANGE }}
               >
@@ -46,7 +46,7 @@ const Contact = ({ contact, deleteContact }) => {
               </Link>
 
               <Link
-                to={`/contacts/edit/${contact.id}`}
+                to={`/edit/${contact.id}`}
                 className="btn my-1"
                 style={{ backgroundColor: CYAN }}
               >

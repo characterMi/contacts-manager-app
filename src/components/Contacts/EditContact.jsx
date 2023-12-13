@@ -60,7 +60,7 @@ const EditContact = () => {
           draft[contactIndex] = { ...data };
         });
 
-        navigate("/contacts");
+        navigate("/");
       }
     } catch (err) {
       console.log(err);
@@ -201,7 +201,7 @@ const EditContact = () => {
                           value="ویرایش مخاطب"
                         />
                         <Link
-                          to={"/contacts"}
+                          to={"/"}
                           className="btn mx-2"
                           style={{ backgroundColor: COMMENT }}
                         >

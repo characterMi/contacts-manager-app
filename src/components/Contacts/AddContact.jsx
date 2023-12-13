@@ -161,7 +161,7 @@ const AddContact = () => {
                           value="ساخت مخاطب"
                         />
                         <Link
-                          to={"/contacts"}
+                          to={"/"}
                           className="btn mx-2"
                           style={{ backgroundColor: COMMENT }}
                         >
