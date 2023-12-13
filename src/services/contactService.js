@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://contacts-manager-app-e4800-default-rtdb.asia-southeast1.firebasedatabase.app";
+const BASE_URL = process.env.REACT_APP_DATA_BASE_URL;
 
 // @desc Get All Contacts
 // @route GET https://contacts-manager-app-e4800-default-rtdb.asia-southeast1.firebasedatabase.app/contacts
